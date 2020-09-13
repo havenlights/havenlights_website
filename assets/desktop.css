@@ -27,3 +27,8 @@ content {
 .music-list a {
   max-width: 30%;
 }
+
+.band-list a {
+  max-width: 22%;
+  margin: 0.2em;
+}

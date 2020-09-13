@@ -1,0 +1,29 @@
+header {
+  width: 60%;
+}
+
+nav ul {
+  flex-direction: row;
+}
+
+nav ul li {
+  flex-grow: 1;
+}
+
+nav li a {
+  font-size: 10pt;
+}
+
+content {
+  width: 60%;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+#wrapper {
+  padding: 1em;
+}
+
+.music-list a {
+  max-width: 30%;
+}

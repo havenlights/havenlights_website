@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  background-image: url("/assets/soa_bg_opt.jpg");
+  background-color: #333;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  line-height: 1.5;
+  text-shadow: black 1px 1px 1px;
+}
+
+p {
+  padding-bottom: 0.5em;
+}
+
+h1, h2, h3 {
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+}
+
+#wrapper {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+  min-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+
+nav {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0.5em;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  color: white;
+  min-width: 7.5rem;
+  text-align: center;
+}
+
+content {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 12pt;
+  margin: 2em;
+}
+
+footer {
+  text-align: center;
+  font-size: 8pt;
+}
+
+#logo {
+  display: block;
+  width: 100%;
+}
+
+.music-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.music-list a {
+  display: inline-block;
+  padding: 0.3em;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0.5em;
+}
+
+.music-list a img {
+  width: 100%;
+}
+
+.author {
+  font-size: 10pt;
+  font-style: italic;
+}
+
+.lyrics {
+  padding-left: 1em;
+}
+
+.chorus {
+  font-style: italic;
+  padding-left: 2em;
+}
+
+.songs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.song {
+  margin: 1em;
+  display: inline-block;
+  flex-grow: 1;
+}
+
+a {
+  color: white;
+}
+
+h1 {
+  margin-bottom: 1em;
+}

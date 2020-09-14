@@ -9,12 +9,17 @@
   <link rel="stylesheet" href="/assets/mobile.css" media="screen and (max-width: 1024px)">
   <link rel="stylesheet" href="/assets/desktop.css" media="screen and (min-width: 1024px)">
   <link rel="icon" href="/assets/favicon.svg" sizes="any" type="image/svg+xml">
+  <script src="https://kit.fontawesome.com/c5491c419a.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div id="bg"></div>
   <div id="wrapper">
     <header>
       <img src="/assets/logo_hl_silver_compressed.png" alt="Havenlights" id="logo">
+      <div class="social-links">
+        <a href="https://www.instagram.com/havenlights_band/"><i class="fab fa-instagram"></i></a> 
+        <a href="https://www.youtube.com/channel/UCkJPuYsAqVddZ8qfCQ28q0Q"><i class="fab fa-youtube"></i></a>
+      </div>
       <nav>
         <ul>
           <li><a href="/index.html">Home</a></li>
@@ -25,14 +30,22 @@
         </ul>
       </nav>
     </header>
-    <content>
+    <main class="news">
       <h1>Home</h1>
-	  <p class="date">13.09.2020</p>
-	  <p> Debut album <em>Songs of Autumn</em> coming out this winter! <br> 
-	   Check out the tracklist and lyrics <a href="/albums/songs_of_autumn.html">here!</a> </p>	  
-	  <br>
-	  <div style="text-align: center"><img src="/assets/songs_of_autumn.jpg" style="width: 60%"></div>
-      </content>
+      <article>
+        <time datetime="2020-09-13">September 13th, 2020</time>
+        <div class="article-body">
+          <h2>Songs of Autumn announced</h2>
+          <p>
+            Debut album <em>Songs of Autumn</em> coming out this winter!<br>
+            Check out the tracklist <a href="/albums/songs_of_autumn.html">here!</a>
+          </p>
+          <p>
+            <img src="/assets/songs_of_autumn.jpg" alt="Songs of Autumn cover art">
+          </p>
+        </div>
+      </article>
+    </main>
     <footer>
       Copyright &copy; 2020 Havenlights &mdash; All rights reserved
     </footer>

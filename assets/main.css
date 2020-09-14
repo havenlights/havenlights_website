@@ -70,7 +70,7 @@ nav ul li a {
   text-align: center;
 }
 
-content {
+main {
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 12pt;
   margin: 2em;
@@ -164,7 +164,29 @@ h1 {
   border-radius: 0.5em;
 }
 
-
 .band-list a img {
   width: 100%;
+}
+
+.item-name {
+  font-style: italic;
+}
+
+article {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.article-body {
+  display: inline-block;
+}
+
+.social-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.social-links a {
+  padding: 0.5em;
 }

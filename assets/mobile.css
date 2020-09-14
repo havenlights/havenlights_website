@@ -18,11 +18,20 @@ nav ul li a {
   font-size: 10pt;
 }
 
-content {
+main {
   width: 100%;
   padding: 0.5em;
 }
 
 .music-list a {
   width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.band-list a {
+  margin-bottom: 0.5em;
+}
+
+.article-body p img {
+  max-width: 100%;
 }

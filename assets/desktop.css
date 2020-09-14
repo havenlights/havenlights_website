@@ -14,7 +14,7 @@ nav li a {
   font-size: 10pt;
 }
 
-content {
+main {
   width: 60%;
   padding: 1em;
   border-radius: 1em;
@@ -31,4 +31,17 @@ content {
 .band-list a {
   max-width: 22%;
   margin: 0.2em;
+}
+
+article time {
+  padding-top: 1em;
+  margin-right: 1em;
+}
+
+.article-body p {
+  width: 40vw;
+}
+
+.article-body p img {
+  max-width: 60%;
 }

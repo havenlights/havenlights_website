@@ -35,3 +35,7 @@ main {
 .article-body p img {
   max-width: 100%;
 }
+
+.social-links {
+  justify-content: center;
+}

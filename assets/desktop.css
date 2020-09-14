@@ -45,3 +45,7 @@ article time {
 .article-body p img {
   max-width: 60%;
 }
+
+.social-links {
+  justify-content: flex-end;
+}

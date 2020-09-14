@@ -25,6 +25,11 @@ p {
 h1, h2, h3 {
   font-family: 'Cinzel', serif;
   font-weight: 500;
+  margin-top: 1em;
+}
+
+ol {
+  margin-left: 2em;
 }
 
 #wrapper {
@@ -184,7 +189,6 @@ article {
 .social-links {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-end;
   font-size: 20pt;
 }
 

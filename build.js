@@ -43,7 +43,8 @@ function renderIndex() {
       date_human: new Date(x.date).toLocaleDateString('en-US', {
         year: 'numeric', month: 'long', day: 'numeric'
       }),
-      contents: fs.readFileSync(`news/${x.contents}.html`, 'utf8')
+      contents: fs.readFileSync(`news/${x.contents}.html`, 'utf8'),
+      title: x.title
     }))
   })
 

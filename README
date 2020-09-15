@@ -1,0 +1,12 @@
+Istruzioni per generare il sito:
+
+    npm install
+    node build.js
+
+Servire il sito:
+
+    http-server publish
+
+Dopo ogni modifica, bisogna eseguire
+
+    node build.js

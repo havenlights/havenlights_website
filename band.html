@@ -1,61 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>Havenlights</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/main.css">
-  <link rel="stylesheet" href="/assets/mobile.css" media="screen and (max-width: 1024px)">
-  <link rel="stylesheet" href="/assets/desktop.css" media="screen and (min-width: 1024px)">
-  <link rel="icon" href="/assets/favicon.svg" sizes="any" type="image/svg+xml">
-  <script src="https://kit.fontawesome.com/c5491c419a.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <div id="bg"></div>
-  <div id="wrapper">
-    <header>
-      <img src="/assets/logo_hl_silver_compressed.png" alt="Havenlights" id="logo">
-      <div class="social-links">
-        <a href="https://www.instagram.com/havenlights_band/"><i class="fab fa-instagram"></i></a> 
-        <a href="https://www.youtube.com/channel/UCkJPuYsAqVddZ8qfCQ28q0Q"><i class="fab fa-youtube"></i></a> 
-        <a href="https://www.facebook.com/Havenlights-Band-107394757722279"><i class="fab fa-facebook"></i></a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/bio.html">Bio</a></li>
-          <li><a href="/band.html">Band</a></li>
-          <li><a href="/music.html">Music</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1>Band</h1>
-      <div class="band-list">
-        <a href="/band/francesco.html">
-          <img src="/assets/songs_of_autumn.jpg" >
-          Francesco Bertolaccini
-        </a>
-        <a href="/band/linda.html">
-          <img src="/assets/songs_of_autumn.jpg" >
-          Linda Raffaet&agrave;
-        </a>
-        <a href="/band/alessandro.html">
-          <img src="/assets/songs_of_autumn.jpg" >
-          Alessandro Petri
-        </a>
-        <a href="/band/daniele.html">
-          <img src="/assets/songs_of_autumn.jpg" >
-          Daniele Davalle
-        </a>		
-      </div>
-
-    </main>
-    <footer>
-      Copyright &copy; 2020 Havenlights &mdash; All rights reserved
-    </footer>
-  </div>
-</body>
-</html>
+<div class="band-list">
+  {{#members}}
+  <a href="/band/{{{filename}}}.html">
+    <img src="/assets/{{{image}}}" >
+    {{name}}
+  </a>
+  {{/members}}
+</div>

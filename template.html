@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    Woah there dude, are you reading the source code? I like your style.
+    Go on, you can steal this template if you want, it sucks anyways.
+
+     - F
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Havenlights - {{page_title}}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/mobile.css" media="screen and (max-width: 1024px)">
+  <link rel="stylesheet" href="/assets/desktop.css" media="screen and (min-width: 1024px)">
+  <link rel="icon" href="/assets/favicon.svg" sizes="any" type="image/svg+xml">
+  <script src="https://kit.fontawesome.com/c5491c419a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="bg"></div>
+  <div id="wrapper">
+    <header>
+      <img src="/assets/logo_hl_silver_compressed.png" alt="Havenlights" id="logo">
+      <div class="social-links">
+      {{#social_links}}
+        <a href="{{{href}}}"><i class="fab fa-{{{icon}}}"></i></a>
+      {{/social_links}}
+      </div>
+      <nav>
+        <ul>
+        {{#sections}}
+          <li><a href="{{{href}}}">{{name}}</a></li>
+        {{/sections}}
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>{{page_title}}</h1>
+      {{{page_contents}}}
+    </main>
+    <footer>
+      Copyright &copy; 2020 Havenlights &mdash; All rights reserved
+    </footer>
+  </div>
+</body>
+</html>

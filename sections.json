@@ -1,0 +1,7 @@
+[
+  { "name": "Home", "href": "/index.html" },
+  { "name": "Bio", "href": "/bio.html" },
+  { "name": "Band", "href": "/band.html" },
+  { "name": "Music", "href": "/music.html" },
+  { "name": "Contact", "href": "/contact.html" }
+]

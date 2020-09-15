@@ -1,0 +1,10 @@
+{
+  "albums": [
+    {
+      "filename": "songs_of_autumn",
+      "name": "Songs of Autumn",
+      "image": "songs_of_autumn.jpg",
+      "year": 2020
+    }
+  ]
+}

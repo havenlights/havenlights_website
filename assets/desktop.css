@@ -25,11 +25,11 @@ main {
 }
 
 .music-list a {
-  max-width: 30%;
+  width: 15em;
 }
 
 .band-list a {
-  max-width: 22%;
+  width: 15em;
   margin: 0.2em;
 }
 
@@ -47,5 +47,5 @@ article time {
 }
 
 .social-links {
-  justify-content: flex-end;
+  justify-content: center;
 }

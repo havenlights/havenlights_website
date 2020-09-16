@@ -186,12 +186,12 @@ article {
   display: inline-block;
 }
 
-.social-links {
+.profile-links {
   display: flex;
   flex-flow: row wrap;
   font-size: 20pt;
 }
 
-.social-links a {
+.profile-links a {
   padding: 0.5em;
 }

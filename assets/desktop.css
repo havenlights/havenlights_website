@@ -49,3 +49,8 @@ article time {
 .profile-links {
   justify-content: center;
 }
+
+#logo {
+  margin: auto;
+  width: 60%;
+}

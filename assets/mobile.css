@@ -39,3 +39,7 @@ main {
 .profile-links {
   justify-content: center;
 }
+
+#logo {
+  width: 100%;
+}

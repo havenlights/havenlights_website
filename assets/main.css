@@ -194,3 +194,15 @@ article {
 .profile-links a {
   padding: 0.5em;
 }
+
+.footer-credits {
+  font-size: 8pt;
+}
+
+.question {
+  font-weight: 700;
+}
+
+.answer ul {
+  list-style-type: none;
+}

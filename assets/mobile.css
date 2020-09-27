@@ -43,3 +43,17 @@ main {
 #logo {
   width: 100%;
 }
+
+.photo {
+  max-width: 100%;
+}
+
+.main-photo {
+  max-width: 100%;
+}
+
+.band-photo {
+  max-width: 80%;
+  display: block;
+  margin: auto;
+}

@@ -54,3 +54,28 @@ article time {
   margin: auto;
   width: 60%;
 }
+
+.photo {
+  max-width: 30%;
+}
+
+.left {
+  float: left;
+  margin-right: 1em;
+}
+
+.right {
+  float: right;
+  margin-left: 1em;
+}
+
+.main-photo {
+  max-width: 90%;
+  margin: auto;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.band-photo {
+  max-width: 40%;
+}

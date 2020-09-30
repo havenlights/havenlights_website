@@ -1,10 +1,18 @@
 {
+  "description": "Havenlights Discography",
   "albums": [
     {
       "filename": "songs_of_autumn",
       "name": "Songs of Autumn",
       "image": "songs_of_autumn.jpg",
-      "year": 2020
+      "year": 2020,
+      "metadata": [
+        { "property": "og:title", "content": "Songs of Autumn" },
+        { "property": "og:type", "content": "music.album" },
+        { "property": "og:music:musician", "content": "Havenlights" },
+        { "property": "og:url", "content": "https://havenlights-band.com/albums/songs_of_autumn.html" },
+        { "property": "og:image", "content": "//havenlights-band.com/assets/songs_of_autumn_small.jpg" }
+      ]
     }
   ]
 }

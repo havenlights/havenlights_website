@@ -2,21 +2,65 @@
   {
     "filename": "francesco",
     "image": "francesco_small.jpg",
-    "name": "Francesco Bertolaccini"
+    "name": "Francesco Bertolaccini",
+    "description": "Bassist for Havenlights",
+    "metadata": [
+      { "property": "og:title", "content": "Francesco Bertolaccini" },
+      { "property": "og:type", "content": "profile" },
+      { "property": "og:profile:first_name", "content": "Francesco" },
+      { "property": "og:profile:last_name", "content": "Bertolaccini" },
+      { "property": "og:profile:gender", "content": "male" },
+      { "property": "og:url", "content": "https://havenlights-band.com/band/francesco.html" },
+      { "property": "og:description", "content": "Bassist for Havenlights" },
+      { "property": "og:image", "content": "//havenlights-band.com/assets/francesco_card.jpg" }
+    ]
   },
   {
     "filename": "linda",
     "image": "linda_small.jpg",
-    "name": "Linda Raffaetà"
+    "name": "Linda Raffaetà",
+    "description": "Vocalist for Havenlights",
+    "metadata": [
+      { "property": "og:title", "content": "Linda Raffaetà" },
+      { "property": "og:type", "content": "profile" },
+      { "property": "og:profile:first_name", "content": "Linda" },
+      { "property": "og:profile:last_name", "content": "Raffaetà" },
+      { "property": "og:profile:gender", "content": "female" },
+      { "property": "og:url", "content": "https://havenlights-band.com/band/linda.html" },
+      { "property": "og:description", "content": "Vocalist for Havenlights" },
+      { "property": "og:image", "content": "//havenlights-band.com/assets/linda_card.jpg" }
+    ]
   },
   {
     "filename": "alessandro",
     "image": "alessandro_small.jpg",
-    "name": "Alessandro Petri"
+    "name": "Alessandro Petri",
+    "description": "Keyboard player for Havenlights",
+    "metadata": [
+      { "property": "og:title", "content": "Alessandro Petri" },
+      { "property": "og:type", "content": "profile" },
+      { "property": "og:profile:first_name", "content": "Alessandro" },
+      { "property": "og:profile:last_name", "content": "Petri" },
+      { "property": "og:profile:gender", "content": "male" },
+      { "property": "og:url", "content": "https://havenlights-band.com/band/alessandro.html" },
+      { "property": "og:description", "content": "Keyboard player for Havenlights" },
+      { "property": "og:image", "content": "//havenlights-band.com/assets/alessandro_card.jpg" }
+    ]
   },
   {
     "filename": "daniele",
     "image": "daniele_small.jpg",
-    "name": "Daniele Davalle"
+    "name": "Daniele Davalle",
+    "description": "Bassist for Havenlights",
+    "metadata": [
+      { "property": "og:title", "content": "Daniele Davalle" },
+      { "property": "og:type", "content": "profile" },
+      { "property": "og:profile:first_name", "content": "Daniele" },
+      { "property": "og:profile:last_name", "content": "Davalle" },
+      { "property": "og:profile:gender", "content": "male" },
+      { "property": "og:url", "content": "https://havenlights-band.com/band/daniele.html" },
+      { "property": "og:description", "content": "Guitarist for Havenlights" },
+      { "property": "og:image", "content": "//havenlights-band.com/assets/daniele_card.jpg" }
+    ]
   }
 ]

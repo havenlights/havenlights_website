@@ -25,12 +25,14 @@ const static = loadJson('static.json')
 
 const main_template = fs.readFileSync('template.html', 'utf8')
 
-function renderFile(title, contents, file) {
+function renderFile(title, contents, file, description, metadata) {
   const data = Mustache.render(main_template, {
     page_title: title,
     social_links: socialLinks,
     sections: sections,
-    page_contents: contents
+    page_contents: contents,
+    description: description,
+    metadata: metadata
   })
   fs.writeFileSync(`${outputPath}/${file}`, data)
 }
@@ -64,7 +66,7 @@ function renderBand() {
   }
 
   for(let member of band) {
-    renderFile(member.name, fs.readFileSync(`band/${member.filename}.html`, 'utf8'), `band/${member.filename}.html`)
+    renderFile(member.name, fs.readFileSync(`band/${member.filename}.html`, 'utf8'), `band/${member.filename}.html`, member.description, member.metadata)
   }
 }
 
@@ -85,7 +87,7 @@ function renderMusic() {
   }
 
   for(let album of music.albums) {
-    renderFile(album.name, fs.readFileSync(`albums/${album.filename}.html`, 'utf8'), `albums/${album.filename}.html`)
+    renderFile(album.name, fs.readFileSync(`albums/${album.filename}.html`, 'utf8'), `albums/${album.filename}.html`, "Album by Havenlights", album.metadata)
   }
 }
 

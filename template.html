@@ -16,6 +16,13 @@
   <link rel="stylesheet" href="/assets/desktop.css" media="screen and (min-width: 1024px)">
   <link rel="icon" href="/assets/favicon.svg" sizes="any" type="image/svg+xml">
   <script src="https://kit.fontawesome.com/c5491c419a.js" crossorigin="anonymous"></script>
+  {{#description}}
+  <meta name="description" content="{{description}}">
+  {{/description}}
+
+  {{#metadata}}
+  <meta property="{{property}}" content="{{{content}}}">
+  {{/metadata}}
 </head>
 <body>
   <div id="bg"></div>

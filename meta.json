@@ -1,0 +1,7 @@
+[
+  { "property": "og:title", "content": "Havenlights" },
+  { "property": "og:description", "content": "Melodic Metal band from Tuscany, Italy" },
+  { "property": "og:url", "content": "https://havenlights-band.com/" },
+  { "property": "og:image", "content": "/assets/havenlights_card_wide.jpg" },
+  { "property": "og:image:width", "content": "1200" }
+]

@@ -22,6 +22,7 @@ const news = loadJson('news.json')
 const sections = loadJson('sections.json')
 const socialLinks = loadJson('social_links.json')
 const static = loadJson('static.json')
+const meta = loadJson('meta.json')
 
 const main_template = fs.readFileSync('template.html', 'utf8')
 
@@ -50,7 +51,7 @@ function renderIndex() {
     }))
   })
 
-  renderFile('Home', contents, 'index.html')
+  renderFile('Home', contents, 'index.html', "Melodic Metal band from Tuscany, Italy", meta)
 }
 
 function renderBand() {

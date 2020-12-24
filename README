@@ -10,3 +10,12 @@ Servire il sito:
 Dopo ogni modifica, bisogna eseguire
 
     node build.js
+
+-------------------------------------
+-------------------------------------
+
+git pull
+
+git status
+git commit -a . -m "message"
+git push

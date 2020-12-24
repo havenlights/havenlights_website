@@ -9,6 +9,10 @@ const Mustache = require('mustache')
 const fs = require('fs')
 const path = require('path')
 const process = require('process')
+const imagemin = require('imagemin')
+const imageminSvgo = require('imagemin-svgo')
+const imageminMozjpeg = require('imagemin-mozjpeg')
+const imageminPngquant = require('imagemin-pngquant')
 
 const outputPath = process.env.HL_PATH || 'publish'
 
@@ -100,11 +104,22 @@ if(!fs.existsSync(`${outputPath}/assets`)) {
   fs.mkdirSync(`${outputPath}/assets`)
 }
 
-renderIndex()
-renderBand()
-renderStatic()
-renderMusic()
+renderIndex();
+renderBand();
+renderStatic();
+renderMusic();
 
-for(let asset of fs.readdirSync('assets')) {
-  fs.copyFileSync(`assets/${asset}`, `${outputPath}/assets/${path.basename(asset)}`)
-}
+(async () => {
+  await imagemin(['assets/*'], {
+    destination: `${outputPath}/assets`,
+    plugins: [
+      imageminMozjpeg({
+        quality: [80, 100]
+      }),
+      imageminPngquant({
+        quality: [1, 1]
+      }),
+      imageminSvgo()
+    ]
+  });
+})();

@@ -79,3 +79,7 @@ article time {
 .band-photo {
   max-width: 40%;
 }
+
+time {
+  min-width: 10em;
+}

@@ -1,6 +1,7 @@
 [
   { "href": "https://www.instagram.com/havenlights_band/", "icon": "instagram" },
-  { "href": "https://www.facebook.com/Havenlights-Band-107394757722279", "icon": "facebook" },
+  { "href": "https://www.facebook.com/havenlightsband/", "icon": "facebook" },
+  { "href": "https://www.twitter.com/havenlightsband", "icon": "twitter" },
   { "href": "https://www.youtube.com/channel/UCkJPuYsAqVddZ8qfCQ28q0Q", "icon": "youtube" },
   { "href": "https://havenlights.bandcamp.com/", "icon": "bandcamp" }
 ]

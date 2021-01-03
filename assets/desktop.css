@@ -35,7 +35,11 @@ main {
 
 article time {
   padding-top: 3em;
-  margin-right: 4em;
+  margin-right: 2em;
+}
+
+.article-body {
+  flex-grow: 1;
 }
 
 .article-body p {
@@ -52,7 +56,7 @@ article time {
 
 #logo {
   margin: auto;
-  width: 60%;
+  width: 615px;
 }
 
 .photo {

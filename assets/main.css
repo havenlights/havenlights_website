@@ -227,3 +227,16 @@ blockquote {
   border-left: 1px solid white;
   padding-left: 1em;
 }
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  border-radius: 0.5em;
+  border: 1px solid #222;
+  background-color: #000a;
+  color: white;
+  resize: vertical;
+}

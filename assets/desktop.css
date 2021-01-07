@@ -87,3 +87,7 @@ article time {
 time {
   min-width: 10em;
 }
+
+blockquote {
+  width: 40vw;
+}

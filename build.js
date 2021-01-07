@@ -15,6 +15,7 @@ const imageminPngquant = require('imagemin-pngquant')
 const Feed = require("feed").Feed
 
 const outputPath = process.env.HL_PATH || 'publish'
+const baseUrl = process.env.HL_URL || 'https://havenlights-band.com'
 
 function loadJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'))
@@ -22,7 +23,18 @@ function loadJson(file) {
 
 const band = loadJson('band.json')
 const music = loadJson('music.json')
-const news = loadJson('news.json').sort((x, y) => x.date.localeCompare(y.date)).reverse()
+const news = loadJson('news.json')
+  .sort((x, y) => x.date.localeCompare(y.date))
+  .reverse()
+  .map(x => ({
+    date: x.date,
+    date_human: new Date(x.date).toLocaleDateString('en-US', {
+      year: 'numeric', month: 'long', day: 'numeric'
+    }),
+    title: x.title,
+    id: x.contents,
+    contents: fs.readFileSync(`news/${x.contents}.html`, 'utf8')
+  }))
 const sections = loadJson('sections.json')
 const socialLinks = loadJson('social_links.json')
 const static = loadJson('static.json')
@@ -45,15 +57,7 @@ function renderFile(title, contents, file, description, metadata) {
 function renderIndex() {
   const template = fs.readFileSync('index.html', 'utf8')
   const contents = Mustache.render(template, {
-    articles: news.map(x => ({
-      date: x.date,
-      date_human: new Date(x.date).toLocaleDateString('en-US', {
-        year: 'numeric', month: 'long', day: 'numeric'
-      }),
-      contents: fs.readFileSync(`news/${x.contents}.html`, 'utf8'),
-      id: x.contents,
-      title: x.title
-    }))
+    articles: news
   })
 
   renderFile('Home', contents, 'index.html', "Melodic Metal band from Tuscany, Italy", meta)
@@ -101,22 +105,22 @@ function renderFeeds() {
   const feed = new Feed({
     title: "Havenlights",
     description: "Havenlights news feed",
-    id: "http://havenlights-band.com",
-    link: "http://havenlights-band.com",
+    id: baseUrl,
+    link: baseUrl,
     language: "en",
     copyright: "All rights reserved 2021, Havenlights",
     feedLinks: {
-      json: "http://havenlights-band.com/feed.json",
-      atom: "http://havenlights-band.com/atom.xml"
+      json: `${baseUrl}/feed.json`,
+      atom: `${baseUrl}/atom.xml`
     }
   })
 
   for(let article of news) {
     feed.addItem({
       title: article.title,
-      id: article.contents,
-      link: `http://havenlights-band.com/index.html#${article.contents}`,
-      content: fs.readFileSync(`news/${article.contents}.html`, 'utf8'),
+      id: article.id,
+      link: `${baseUrl}/index.html#${article.id}`,
+      content: article.contents,
       date: new Date(article.date)
     });
   }

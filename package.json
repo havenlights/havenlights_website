@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/frabert/havenlights_website#readme",
   "dependencies": {
+    "feed": "^4.2.1",
     "imagemin": "^7.0.1",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.1",

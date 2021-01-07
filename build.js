@@ -13,6 +13,7 @@ const imagemin = require('imagemin')
 const imageminSvgo = require('imagemin-svgo')
 const imageminMozjpeg = require('imagemin-mozjpeg')
 const imageminPngquant = require('imagemin-pngquant')
+const Feed = require("feed").Feed
 
 const outputPath = process.env.HL_PATH || 'publish'
 
@@ -22,7 +23,7 @@ function loadJson(file) {
 
 const band = loadJson('band.json')
 const music = loadJson('music.json')
-const news = loadJson('news.json')
+const news = loadJson('news.json').sort((x, y) => x.date.localeCompare(y.date)).reverse()
 const sections = loadJson('sections.json')
 const socialLinks = loadJson('social_links.json')
 const static = loadJson('static.json')
@@ -51,6 +52,7 @@ function renderIndex() {
         year: 'numeric', month: 'long', day: 'numeric'
       }),
       contents: fs.readFileSync(`news/${x.contents}.html`, 'utf8'),
+      id: x.contents,
       title: x.title
     }))
   })
@@ -96,6 +98,35 @@ function renderMusic() {
   }
 }
 
+function renderFeeds() {
+  const feed = new Feed({
+    title: "Havenlights",
+    description: "Havenlights news feed",
+    id: "http://havenlights-band.com",
+    link: "http://havenlights-band.com",
+    language: "en",
+    copyright: "All rights reserved 2021, Havenlights",
+    feedLinks: {
+      json: "http://havenlights-band.com/feed.json",
+      atom: "http://havenlights-band.com/atom.xml"
+    }
+  })
+
+  for(let article of news) {
+    feed.addItem({
+      title: article.title,
+      id: `http://havenlights-band.com/index.html#${article.contents}`,
+      link: `http://havenlights-band.com/index.html#${article.contents}`,
+      content: fs.readFileSync(`news/${article.contents}.html`, 'utf8'),
+      date: new Date(article.date)
+    });
+  }
+
+  fs.writeFileSync(`${outputPath}/rss.xml`, feed.rss2());
+  fs.writeFileSync(`${outputPath}/atom.xml`, feed.atom1());
+  fs.writeFileSync(`${outputPath}/feed.json`, feed.json1());
+}
+
 if(!fs.existsSync(outputPath)) {
   fs.mkdirSync(outputPath)
 }
@@ -108,6 +139,7 @@ renderIndex();
 renderBand();
 renderStatic();
 renderMusic();
+renderFeeds();
 
 (async () => {
   await imagemin(['assets/*'], {

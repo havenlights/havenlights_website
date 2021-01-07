@@ -7,7 +7,6 @@
 
 const Mustache = require('mustache')
 const fs = require('fs')
-const path = require('path')
 const process = require('process')
 const imagemin = require('imagemin')
 const imageminSvgo = require('imagemin-svgo')
@@ -115,7 +114,7 @@ function renderFeeds() {
   for(let article of news) {
     feed.addItem({
       title: article.title,
-      id: `http://havenlights-band.com/index.html#${article.contents}`,
+      id: article.contents,
       link: `http://havenlights-band.com/index.html#${article.contents}`,
       content: fs.readFileSync(`news/${article.contents}.html`, 'utf8'),
       date: new Date(article.date)

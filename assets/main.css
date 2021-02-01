@@ -231,7 +231,8 @@ iframe {
 blockquote {
   font-style: italic;
   border-left: 1px solid white;
-  padding-left: 1em;
+  padding-left: 0.5em;
+  margin-left: 0.5em;
 }
 
 input[type=text], input[type=email], textarea {
@@ -245,4 +246,8 @@ input[type=text], input[type=email], textarea {
   background-color: #000a;
   color: white;
   resize: vertical;
+}
+
+figcaption {
+  text-align: right;
 }

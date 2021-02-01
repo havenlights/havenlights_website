@@ -91,3 +91,15 @@ time {
 blockquote {
   width: 40vw;
 }
+
+.center-divs div {
+  margin: 0 auto;
+}
+
+.reviews {
+  width: 40vw;
+}
+
+.reviews blockquote {
+  width: 100%;
+}

@@ -3,5 +3,8 @@
   { "href": "https://www.facebook.com/havenlightsband/", "icon": "facebook" },
   { "href": "https://www.twitter.com/havenlightsband", "icon": "twitter" },
   { "href": "https://www.youtube.com/channel/UCkJPuYsAqVddZ8qfCQ28q0Q", "icon": "youtube" },
-  { "href": "https://havenlights.bandcamp.com/", "icon": "bandcamp" }
+  { "href": "https://havenlights.bandcamp.com/", "icon": "bandcamp" },
+  { "href": "https://open.spotify.com/artist/1MQbq5HIC9pwlEyE3Xeyv5", "icon": "spotify" },
+  { "href": "https://music.amazon.com/artists/B08RS5BLRJ/havenlights", "icon": "amazon" },
+  { "href": "https://music.apple.com/us/artist/havenlights/1546911870", "icon": "apple" }
 ]

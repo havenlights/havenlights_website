@@ -88,10 +88,6 @@ time {
   min-width: 10em;
 }
 
-blockquote {
-  width: 40vw;
-}
-
 .center-divs div {
   margin: 0 auto;
 }
@@ -105,5 +101,9 @@ blockquote {
 }
 
 .spoti-container {
+  width: 40vw;
+}
+
+.news-quote {
   width: 40vw;
 }

@@ -103,3 +103,7 @@ blockquote {
 .reviews blockquote {
   width: 100%;
 }
+
+.spoti-container {
+  width: 40vw;
+}

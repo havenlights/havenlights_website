@@ -213,6 +213,12 @@ article {
   padding-bottom: 56.25%;
 }
 
+.spoti-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 33%;
+}
+
 iframe {
   position: absolute;
   top: 0;

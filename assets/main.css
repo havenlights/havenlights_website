@@ -251,3 +251,7 @@ input[type=text], input[type=email], textarea {
 figcaption {
   text-align: right;
 }
+
+figure {
+  padding-bottom: 1em;
+}
